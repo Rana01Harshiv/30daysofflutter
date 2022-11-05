@@ -22,6 +22,10 @@ class MyApp extends StatelessWidget {
 
         primaryTextTheme: GoogleFonts.latoTextTheme()
       ),
+      initialRoute: "/",
+      routes: {
+
+      },
       home: const Splashview()
     );
   }
