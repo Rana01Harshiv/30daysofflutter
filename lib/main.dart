@@ -1,5 +1,7 @@
+import 'package:drawer_app/screens/details_screen.dart';
 import 'package:drawer_app/screens/home_screen.dart';
 import 'package:drawer_app/screens/splash_view.dart';
+import 'package:drawer_app/uties/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -24,9 +26,14 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: "/",
       routes: {
+            "/" : (context) => Splashview(),
+            MyRoutes.homeRoute:(context) => Homescreen(),
+        MyRoutes.splashRoute:(context) => Splashview(),
+        MyRoutes.loginRoute:(context) => Login(),
+
 
       },
-      home: const Splashview()
+     // home: const Splashview()
     );
   }
 }

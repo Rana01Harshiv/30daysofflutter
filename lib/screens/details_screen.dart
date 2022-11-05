@@ -1,4 +1,5 @@
 import 'package:drawer_app/screens/home_screen.dart';
+import 'package:drawer_app/uties/routes.dart';
 import 'package:flutter/material.dart';
 
 class Login extends StatelessWidget {
@@ -45,7 +46,7 @@ class Login extends StatelessWidget {
                   ),
                   ElevatedButton(
                       onPressed: (){
-                            Navigator.pushNamed(context, Homescreen(key: key));
+                            Navigator.pushNamed(context, MyRoutes.homeRoute);
                       } ,
                       child: Text ("LoginNow"),
                         style: TextButton.styleFrom(minimumSize: Size(150, 40)),
